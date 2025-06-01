@@ -21,17 +21,32 @@
 
  int main(void)
  {	
-	delay_init();	    //ÑÓÊ±º¯Êı³õÊ¼»¯	
+	delay_init();	    //å¯¤èˆµæ¤‚é‘èŠ¥æšŸé’æ¿†îé–ï¿½	
 	lcd1602_init();	 
-	LED_Init();		  	//³õÊ¼»¯ÓëLEDÁ¬½ÓµÄÓ²¼ş½Ó¿Ú
+	LED_Init();		  	//é’æ¿†îé–æ ¦ç¬ŒLEDæ©ç‚´å¸´é¨å‹­â€–æµ èˆµå¸´é™ï¿½
 	while(1)
 	{
 		LED0=0;
-		delay_ms(300);	 //ÑÓÊ±300ms
+		delay_ms(300);	 //å¯¤èˆµæ¤‚300ms
 		LED0=1;
-		delay_ms(300);	//ÑÓÊ±300ms
+		delay_ms(300);	//å¯¤èˆµæ¤‚300ms
 		lcd1602_show_string(0, 0, (unsigned char*)"ERR");
 		
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
